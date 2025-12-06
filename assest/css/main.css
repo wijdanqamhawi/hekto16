@@ -15,19 +15,28 @@ a{
     margin: 0 auto;
 
 }
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
 body{
     height: 3000px;
 }
 .header{
    
  padding:15px 0;
-  background-color: white;
-  margin-top: 20px;
+background-color: white;
   position: fixed;
+  top:0;
   width: 100%;
+  
   
  
 }
+
+
 
 .list ul{
     display: flex;
@@ -42,20 +51,22 @@ ul{
 }
 .header .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
     align-items: center;
 }
-.header input{
+.header input, .footer .input{
     border:0;
+    padding-left:5px;
 }
 
-.header button{
+.header button, .footer .button{
      border:0;
     padding: 10px 5px;
     background-color: #FB2E86;
 }
-.header form {
+.header form ,.footer form {
     border:1px solid black;
     display:flex;
     
@@ -73,5 +84,65 @@ ul{
      transition-property: color;
     transition-duration: 1.1s;
     transition-delay: .5s;
+
+}
+.footer{
+    margin-top: 120px;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    
+    
+    
+
+}
+.footer .row{
+    align-items: flex-start;
+    gap:30px;
+}
+.footer .right-side{
+    width: calc((100% -60px) / 2);
+
+}
+
+.footer .left-side{
+    width: calc((100% -60px) / 2);
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.footer .left-side .search-form form{
+   display: flex;
+   border:1px solid black;
+}
+
+
+ .footer .item h2{
+    margin-top:20px;
+}
+
+li{
+    padding:30px;
+}
+.menue{
+    display: none;
+}
+@media screen and (min-width:0) and (max-width:934px){
+    .header .search-form,
+  .header .list{
+        display: none;
+    }
+    .menue{
+        display: block;
+    }
+ @media  screen and (min-width:0px) and (max-width:800px) {
+    li{
+        padding:0px;
+    }
+    .footer .item h2{
+        margin:0;
+    }
+    
+ }
+
 
 }
