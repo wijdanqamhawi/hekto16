@@ -93,6 +93,7 @@ ul{
     
     
     
+    
 
 }
 .footer .row{
@@ -134,6 +135,7 @@ li{
     .menue{
         display: block;
     }
+}
  @media  screen and (min-width:0px) and (max-width:800px) {
     li{
         padding:0px;
@@ -143,6 +145,20 @@ li{
     }
     
  }
-
+ .main-content {
+    background-image: url('./../image/image.png');
+    height: 462vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+p,h2{
+margin-top:20px;
+color:#151875;
 
 }
+
+
